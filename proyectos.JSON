@@ -1,0 +1,34 @@
+[
+    {
+        "año": "2024",
+        "fecha": "February 2024",
+        "titulo": "Aeronaves Argentinas",
+        "descripcion": "A web application developed as the final project for a web development course. The project demonstrates foundational skills in responsive design and front-end development.",
+        "tecnologias": ["Bootstrap", "CSS", "HTML"],
+        "link": "https://matiaskv0.github.io/AeronavesArgentinas/"
+    },
+    {
+        "año": "2024",
+        "fecha": "December 2024",
+        "titulo": "Academix",
+        "descripcion": "An educational platform designed to practice core JavaScript concepts, including session data retention through LocalStorage.",
+        "tecnologias": ["JavaScript", "LocalStorage"],
+        "link": "https://matiaskv0.github.io/Academix/"
+    },    
+    {
+        "año": "2024",
+        "fecha": "November 2024",
+        "titulo": "Prototype Portfolio",
+        "descripcion": "An initial portfolio design where I experimented with technologies like React.",
+        "tecnologias": ["JavaScript", "React","LocalStorage"],
+        "link": "https://matiaskv0.github.io/Prototipo/"
+    },    
+    {
+        "año": "2025",
+        "fecha": "January 2025",
+        "titulo": "Main Portfolio",
+        "descripcion": "Using Vite, I developed this portfolio to experiment with Tailwind CSS and JSON.",
+        "tecnologias": ["JavaScript", "JSON", "Tailwind CSS","Vite"],
+        "link": "#"
+    }   
+]

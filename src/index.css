@@ -8,6 +8,23 @@ html {
     scroll-behavior: smooth;
 }
 
+.progress-bar {
+  background: linear-gradient(135deg, #3B82F6 25%, transparent 25%, transparent 50%, #3B82F6 50%, #3B82F6 75%, transparent 75%, transparent);
+  background-size: 20px 20px;
+  animation: loading-stripes 4s linear infinite;
+}
+
+@keyframes loading-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 20px 0;
+  }
+}
+
+
+
 :root {
     --scrollbar-track: #f1f1f1;
     --scrollbar-thumb: #c1c1c1;

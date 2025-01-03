@@ -1,19 +1,9 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const formulario = document.querySelector("form");
     const listaProyectos = document.querySelectorAll(".listaProyectos");
-    const lenguaje = document.querySelector("#lenguaje");
 
-    seleccionarProyectos("");
-
-    lenguaje.addEventListener('click', (e) => {
-        e.preventDefault();
-        setTimeout(()=>{
-            seleccionarProyectos("");
-        },100)
-    });
+    formulario.addEventListener('DOMContentLoaded', seleccionarProyectos(""));
     formulario.addEventListener('change', seleccionarPeriodo);
-
 
     function seleccionarPeriodo(e){
         const año = e.target.value;
@@ -21,37 +11,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function seleccionarProyectos(año){
-        let URL 
-        if(lenguaje.textContent==="SP"){
-            URL = './src/proyectosSP.JSON';
-        }
-        else{
-            URL = './src/proyectos.JSON'
-        }
-        fetch(URL)
+        fetch('./src/proyectos.JSON')
             .then(response => response.json())
             .then(data => {
                 if(año===""){
-                    filtrarDatos(data, lenguaje.textContent);
+                    data.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
                     mostrarProyectos(data);
                     return;
                 }
                 const proyectosFiltrados = data.filter(proyecto => año === "" || proyecto.año === año);
-                console.log(proyectosFiltrados)
-
-                filtrarDatos(proyectosFiltrados, lenguaje.textContent)
-
+                // Sort projects by date from newest to oldest
+                proyectosFiltrados.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
+                // Render filtered projects
                 mostrarProyectos(proyectosFiltrados);
             });
-    }
-
-    function filtrarDatos(arreglo,lenguaje){
-        if(lenguaje.textContent==='SP'){
-            arreglo.sort((a, b) => new Date(b.date) - new Date(a.date));
-        }
-        else{
-            arreglo.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
-        }
     }
 
     function mostrarProyectos(proyectos){

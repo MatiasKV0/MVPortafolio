@@ -1,0 +1,23 @@
+[
+    { "id": "1", "EN": "Projects", "SP": "Proyectos" },
+    { "id": "2", "EN": "Skills", "SP": "Habilidades" },
+    { "id": "3", "EN": "Education", "SP": "Educación" },
+    { "id": "4", "EN": "Contact", "SP": "Contacto" },
+    { "id": "5", "EN": "[Developer]", "SP": "[Desarrollador]" },
+    { "id": "6", "EN": "Projects", "SP": "Proyectos" },
+    { "id": "7", "EN": "Year", "SP": "Año" },
+    { "id": "8", "EN": "All Projects", "SP": "Todos los proyectos" },
+    { "id": "9", "EN": "2025", "SP": "2025" },
+    { "id": "10", "EN": "2024", "SP": "2024" },
+    { "id": "11", "EN": "Skills", "SP": "Habilidades" },
+    { "id": "12", "EN": "Education", "SP": "Educación" },
+    { "id": "13", "EN": "Computer engineering", "SP": "Ingeniería en Computación" },
+    { "id": "14", "EN": "National University of La Matanza, 2024 - 2029", "SP": "Universidad Nacional de La Matanza, 2024 - 2029" },
+    { "id": "15", "EN": "Progress 11/63", "SP": "Progreso 11/63" },
+    { "id": "16", "EN": "Full-Stack Web Development", "SP": "Desarrollo Web Full-Stack" },
+    { "id": "17", "EN": "Advanced JavaScript", "SP": "JavaScript Avanzado" },
+    { "id": "18", "EN": "UI/UX Design Principles", "SP": "Principios de Diseño UI/UX" },
+    { "id": "19", "EN": "Agile Project Management", "SP": "Gestión Ágil de Proyectos" },
+    { "id": "20", "EN": "Ready to build something amazing together?", "SP": "¿Listo para construir algo increíble juntos?" },
+    { "id": "21", "EN": "→SEND ME A EMAIL", "SP": "→ENVÍAME UN CORREO" }
+]

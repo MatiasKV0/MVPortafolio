@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./src/index.css"/>
+  </head>
+
+  <body class="bg-white dark:bg-[#161616] text-gray-800 dark:text-white font-noto font-thin">
+    <!-- Header -->
+    <header class="flex flex-col md:flex-row justify-between py-4 md:py-6 px-4 md:px-20 fixed w-full z-10 text-gray-600 dark:text-gray-400 transition-transform duration-300 bg-white/80 dark:bg-[#161616]/80 backdrop-blur-sm">
+      <div class="text-center md:text-left mb-4 md:mb-0">
+        <a href="#welcome" class="text-lg md:text-xl hover:underline">— Matias Villan</a>
+      </div>
+      <nav>
+        <ul class="flex flex-wrap justify-center md:justify-end space-x-6 items-center md:space-x-20">
+          <li><a id="data-1" href="#projects" class="hover:underline">Projects</a></li>
+          <li><a id="data-2" href="#skills" class="hover:underline">Skills</a></li>
+          <li><a id="data-3" href="#education" class="hover:underline">Education</a></li>
+          <li><a id="data-4" href="#contact" class="hover:underline">Contact</a></li>
+          <li><button id="lenguaje" class="hover:bg-gray-300 min-w-8 dark:hover:text-black border border-gray-900 dark:border-gray-50 px-1 rounded">EN</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex flex-col items-center" id="welcome">
+      <!-- Hero Section -->
+      <section class="h-screen w-full md:w-3/4 max-w-screen-xl flex flex-col items-center md:items-start justify-center md:justify-end px-4 md:px-0">
+        <h1 class="text-4xl md:text-8xl flex flex-col pb-6 md:pb-10 text-center md:text-left">
+          <span class="font-thin">Matias Villan</span>
+          <span id="data-5" class="font-bold md:pl-28">[Developer]</span>
+        </h1>
+        <div class="w-full">
+          <ul class="flex justify-center gap-8 md:gap-28 pb-5 pt-5 border-t border-gray-700/50 dark:border-gray-100/30">
+            <li><a class="hover:underline text-lg" href="">Linkedin</a></li>
+            <li><a class="hover:underline text-lg" href="">Github</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="w-full md:w-3/5 max-w-screen-xl mb-16 pt-20 px-4 md:px-0">
+        <h2 id="data-6" class="text-2xl md:text-3xl font-bold mb-8 text-center">Projects</h2>
+        <form action="" class="my-6 md:my-10 px-4 md:px-20 rounded-lg text-white">
+          <div class="mb-4">
+            <label id="data-7" for="year" class="block text-sm font-medium text-black dark:text-gray-300">Year</label>
+            <select name="Año" id="year" class="mt-1 block w-full px-4 py-2 bg-white dark:bg-[#161616] border border-gray-300 dark:border-gray-100/50 text-gray-800 dark:text-white rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+              <option id="data-8" value="">All Projects</option>
+              <option id="data-9" value="2025">2025</option>
+              <option id="data-10" value="2024">2024</option>
+            </select>
+          </div>
+        </form>
+        <ol class="listaProyectos relative border-l border-gray-300 dark:border-gray-700 max-h-[500px] overflow-y-auto scrollbar-thin px-4">
+          <!-- Projects will be inserted here -->
+        </ol>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="w-full md:w-3/4 max-w-screen-xl mb-16 pt-20 px-4 md:px-0 border-t border-gray-700/50 dark:border-gray-100/30">
+        <h2 id="data-11" class="text-2xl md:text-3xl font-bold mb-8 text-center">Skills</h2>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <li class="p-4 rounded-xl text-center shadow-md border border-gray-300 dark:border-gray-100/50 dark:shadow-sm dark:shadow-gray-100">JavaScript</li>
+            <li class="p-4 rounded-xl text-center shadow-md border border-gray-300 dark:border-gray-100/50 dark:shadow-sm dark:shadow-gray-100">React</li>
+            <li class="p-4 rounded-xl text-center shadow-md border border-gray-300 dark:border-gray-100/50 dark:shadow-sm dark:shadow-gray-100">Tailwind CSS</li>
+            <li class="p-4 rounded-xl text-center shadow-md border border-gray-300 dark:border-gray-100/50 dark:shadow-sm dark:shadow-gray-100">MySQL</li>
+            <li class="p-4 rounded-xl text-center shadow-md border border-gray-300 dark:border-gray-100/50 dark:shadow-sm dark:shadow-gray-100">C</li>
+            <li class="p-4 rounded-xl text-center shadow-md border border-gray-300 dark:border-gray-100/50 dark:shadow-sm dark:shadow-gray-100">Python</li>
+            <li class="p-4 rounded-xl text-center shadow-md border border-gray-300 dark:border-gray-100/50 dark:shadow-sm dark:shadow-gray-100">API Integration</li>
+            <li class="p-4 rounded-xl text-center shadow-md border border-gray-300 dark:border-gray-100/50 dark:shadow-sm dark:shadow-gray-100">Node.js</li>
+            <li class="p-4 rounded-xl text-center shadow-md border border-gray-300 dark:border-gray-100/50 dark:shadow-sm dark:shadow-gray-100">MongoDB</li>
+            <li class="p-4 rounded-xl text-center shadow-md border border-gray-300 dark:border-gray-100/50 dark:shadow-sm dark:shadow-gray-100">Git</li>
+            <li class="p-4 rounded-xl text-center shadow-md border border-gray-300 dark:border-gray-100/50 dark:shadow-sm dark:shadow-gray-100">TypeScript</li>
+            <li class="p-4 rounded-xl text-center shadow-md border border-gray-300 dark:border-gray-100/50 dark:shadow-sm dark:shadow-gray-100">Agile Methodologies</li>
+        </ul>
+      </section>
+
+      <!-- education -->
+      <section id="education" class="w-full md:w-3/4 max-w-screen-xl mb-16 pt-20 px-4 md:px-0 border-t border-gray-700/50 dark:border-gray-100/30">
+        <h2 id="data-12" class="text-2xl md:text-3xl font-bold mb-8 text-center">Education</h2>
+        <div class="mb-8 p-4 md:p-6 rounded-lg shadow-md border border-gray-300 dark:border-gray-100/50">
+          <h3 id="data-13" class="text-xl font-semibold mb-2">Computer engineering</h3>
+          <p id="data-14" class="text-gray-600 dark:text-gray-400">National University of La Matanza, 2024 - 2029</p>
+          <div class="mt-4">
+            <label id="data-15" for="progress" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Progress 11/63</label>
+            <div class="w-full bg-gray-300 rounded-full h-4 dark:bg-gray-700">
+              <div class="bg-blue-500 h-4 rounded-full" style="width: 20%;"></div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Courses -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="p-4 rounded-lg shadow-md dark:shadow-sm dark:shadow-gray-100">
+            <h4 id="data-16" class="text-lg font-semibold">Full-Stack Web Development</h4>
+            <a class="hover:underline" href="" class="text-gray-600 dark:text-gray-400">⬈ Codecademy</a>
+          </div>
+          <div class="p-4 rounded-lg shadow-md dark:shadow-sm dark:shadow-gray-100">
+            <h4 id="data-17" class="text-lg font-semibold">Advanced JavaScript</h4>
+            <a class="hover:underline" href="" class="text-gray-600 dark:text-gray-400">⬈ Udemy</a>
+          </div>
+          <div class="p-4 rounded-lg shadow-md dark:shadow-sm dark:shadow-gray-100">
+            <h4 id="data-18" class="text-lg font-semibold">UI/UX Design Principles</h4>
+            <a class="hover:underline" href="" class="text-gray-600 dark:text-gray-400">⬈ Coursera</a>
+          </div>
+          <div class="p-4 rounded-lg shadow-md dark:shadow-sm dark:shadow-gray-100">
+            <h4 id="data-19" class="text-lg font-semibold">Agile Project Management</h4>
+            <a class="hover:underline" href="" class="text-gray-600 dark:text-gray-400">⬈ edX</a>
+          </div>
+        </div>
+        
+      </section>
+      
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-100 dark:bg-[#1C1D22] h-screen flex justify-between items-center shadow-md dark:shadow-sm dark:shadow-gray-100">
+      <section class="max-w-screen-xl mx-auto w-full md:w-11/12 h-4/5 border border-gray-700/50 dark:border-gray-100/50 rounded-3xl grid grid-rows-2 gap-6">
+        <!-- Primera fila con dos columnas -->
+         <div class="flex justify-center mt-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-3/4 text-center md:text-left">
+          <div class="flex justify-end items-end">
+            <h2 id="data-20" class="text-5xl font-semibold">Ready to build something amazing together?</h2>
+          </div>
+          <div class="flex justify-center md:justify-end items-end">
+            <a id="data-21" href="mailto:matiasnicolas.villan@gmail.com?Subject=Consulta%20de%20Servicio" class="font-thin text-3xl hover:underline">→SEND ME A EMAIL</a>
+          </div>
+        </div>
+      </div>
+        <!-- Segunda fila -->
+        <div class="flex justify-center flex-wrap content-end pb-10">
+          <div class="flex w-3/4 justify-center mb-10 md:mb-0 pt-10 border-t border-gray-700/50 dark:border-gray-100/50">
+          <ul class="flex flex-row gap-20">
+          <li><a class="hover:underline text-lg" href="">Linkedin</a></li>
+          <li><a class="hover:underline text-lg" href="">Github</a></li>
+        </ul>
+      </div>
+        </div>
+      </section>
+    </footer>
+    
+  </body>
+  <script src="./src/main.js"></script>
+  <script src="./src/lenguajes.js"></script>
+</html>

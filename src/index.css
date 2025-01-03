@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --scrollbar-track: #f1f1f1;
+    --scrollbar-thumb: #c1c1c1;
+    --scrollbar-border: #ffffff;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --scrollbar-track: #1B1B1B;
+      --scrollbar-thumb: #4A4A4A;
+      --scrollbar-border: #161616;
+    }
+  }
+  
+  body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbar-border);
+  }
